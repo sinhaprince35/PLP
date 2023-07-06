@@ -27,7 +27,7 @@ function createProductCard(product) {
   card.appendChild(title);
 
   const variants = document.createElement("p");
-  variants.className = "product-variants";
+variants.classList.add("product-variants");
 
   product.product_variants.forEach((variant) => {
     const variantValues = Object.values(variant).map((value) =>
