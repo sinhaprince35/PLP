@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@600&family=Outfit&family=Poppins&family=Work+Sans&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.api-content {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card .badge {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    background-color: #CCFF78;
+    color: #030303;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.product-card img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h1 {
+    position: relative;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.product-card p {
+    position: absolute;
+    margin: 30px 0px 15px 145px;
+    font-size: 14px;
+    color: #777;
+}
+
+.layout-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.layout-icon.active {
+    color: #007bff;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.marked-text {
+    background-color: #CCFF78;
+    /* position: fixed; */
+  }
+@media (max-width:765px) {
+    .product-card p {
+        margin: 50px 0px 15px 145px;
+    }
+
+    .product-card h1 {
+        font-size: 15px;
+    }
+}
